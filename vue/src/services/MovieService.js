@@ -54,9 +54,20 @@ export default {
   },
   deleteFromWatchlist(user, movie) {
     return axios.delete(`/users/${user.id}/watchlist/${movie.id}`);
+  },
+
+  getMoviesFor(term) {
+    const options = {
+      method: 'GET',
+      url: `https://moviesdatabase.p.rapidapi.com/titles/search/title/${term}`,
+      params: { exact: 'false', startYear: '1960', titleType: 'movie', info: 'base_info' },
+      headers: {
+        'X-RapidAPI-Key': 'fc042d316amsheafb3b419d7103ep133d85jsn94c358d50ccc',
+        'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+      }
+    };
+    return axios.request(options);
   }
-
-
 
 
 
