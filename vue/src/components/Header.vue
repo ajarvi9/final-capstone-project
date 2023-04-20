@@ -2,7 +2,7 @@
   <div class="header-container">
     <img src="../assets/movieclapboard.png" alt="logo" />
     <div class="title">Movie Elevator</div>
-    <div class="version">v.0.5</div>
+    <div class="version">v.0.6</div>
   </div>
 </template>
 
