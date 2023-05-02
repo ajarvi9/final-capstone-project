@@ -1,30 +1,31 @@
 <template>
   <div>
-    <div class="all-movies"> 
-    <h1>All Movies</h1>
-    <loader id="load" v-if="isLoading"></loader>
-  <div class="data" v-else>
-    <div class="search-wrapper">
-      <input
-        type="search"
-        placeholder="Search Movies..."
-        class="search-bar"
-        v-model="searchText"
-      />
-    </div>
-    
-    <div class="container-wrapper">
-      <div class="movie-cards-container" >
-        <movie-card
-          v-for="movie in filteredMovies"
-          :key="movie.id"
-          v-bind:movie="movie"
-          @show-detail="$emit('show-detail', $event)"
-        />
+    <div class="all-movies">
+      <h1>All Movies</h1>
+      <loader id="load" v-if="isLoading"></loader>
+      <div class="data" v-else>
+        <div class="search-wrapper">
+          <input
+            type="search"
+            placeholder="Search Movies..."
+            class="search-bar"
+            v-model="searchText"
+            @keypress.enter="searchForMovies"
+          />
+        </div>
+
+        <div class="container-wrapper">
+          <div class="movie-cards-container">
+            <movie-card
+              v-for="movie in movies"
+              :key="movie.id"
+              v-bind:movie="movie"
+              @show-detail="$emit('show-detail', $event)"
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
   </div>
 </template>
 
@@ -51,11 +52,32 @@ export default {
     Loader,
   },
   computed: {
-    filteredMovies() {
-      return this.movies.filter((movie) => {
-        return movie.title
-          .toLowerCase()
-          .includes(this.searchText.toLowerCase());
+    // filteredMovies() {
+    //   // // return this.movies.filter((movie) => {
+    //   // //   return movie.title
+    //   // //     .toLowerCase()
+    //   // //     .includes(this.searchText.toLowerCase());
+    //   // });
+    // },
+  },
+  methods: {
+    searchForMovies() {
+      window.alert(this.searchText);
+      MovieService.getMoviesFor(this.searchText).then((response) => {
+        this.movies = response.data.results.map((m) => {
+          return {
+            id: m.id,
+            title: m.titleText.text.replaceAll("'", "`"),
+            releaseDate: `${m.releaseDate.month ? m.releaseDate.month : 1}/${
+              m.releaseDate.day ? m.releaseDate.day : 1
+            }/${m.releaseDate.year}`,
+            poster: m.primaryImage ? m.primaryImage.url : "",
+            overview: m.plot
+              ? m.plot.plotText.plainText.replaceAll("'", "`")
+              : "",
+            // genres: m.genres.genres.map((genre) => genre.id),
+          };
+        });
       });
     },
   },
