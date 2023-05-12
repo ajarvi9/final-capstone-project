@@ -67,10 +67,9 @@ export default {
       }
     };
     return axios.request(options);
-  }
 
-
-
-
+  },
 
 }
+
+

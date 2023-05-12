@@ -219,17 +219,17 @@ insert into movies (id, title, release_date, poster, overview) values (33, 'John
 insert into movie_genre(movie_id, genre_id) values (33, 3);
 insert into movie_genre(movie_id, genre_id) values (33, 7);
 
-insert into movies (id, title, release_date, poster, overview) values (34, 'Plavkyně', '11/23/2022', 'https://m.media-amazon.com/images/M/MV5BOGZmMWM1NTItYzBhYi00YjEzLWI3OTQtNWM4ZDhjMDkxYWEwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg', 'From war-torn Syria to the 2016 Rio Olympics, two young sisters embark on a harrowing journey as refugees, putting both their hearts and champion swimming skills to heroic use.');
-insert into movie_genre(movie_id, genre_id) values (34, 3);
-insert into movie_genre(movie_id, genre_id) values (34, 7);
-insert into movie_genre(movie_id, genre_id) values (34, 22);
-
-insert into movies (id, title, release_date, poster, overview) values (35, 'שלושה עשר חיים', '8/5/2022', 'https://m.media-amazon.com/images/M/MV5BNzI4YzkyMTYtYmQ1MC00NjYwLThkMDgtY2E1Njg1MTAzZWJhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg', 'A rescue mission is assembled in Thailand where a group of young boys and their soccer coach are trapped in a system of underground caves that are flooding.');
-insert into movie_genre(movie_id, genre_id) values (35, 0);
-insert into movie_genre(movie_id, genre_id) values (35, 1);
-insert into movie_genre(movie_id, genre_id) values (35, 3);
-insert into movie_genre(movie_id, genre_id) values (35, 7);
-insert into movie_genre(movie_id, genre_id) values (35, 24);
+--insert into movies (id, title, release_date, poster, overview) values (34, 'Plavkyně', '11/23/2022', 'https://m.media-amazon.com/images/M/MV5BOGZmMWM1NTItYzBhYi00YjEzLWI3OTQtNWM4ZDhjMDkxYWEwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg', 'From war-torn Syria to the 2016 Rio Olympics, two young sisters embark on a harrowing journey as refugees, putting both their hearts and champion swimming skills to heroic use.');
+--insert into movie_genre(movie_id, genre_id) values (34, 3);
+--insert into movie_genre(movie_id, genre_id) values (34, 7);
+--insert into movie_genre(movie_id, genre_id) values (34, 22);
+--
+--insert into movies (id, title, release_date, poster, overview) values (35, 'שלושה עשר חיים', '8/5/2022', 'https://m.media-amazon.com/images/M/MV5BNzI4YzkyMTYtYmQ1MC00NjYwLThkMDgtY2E1Njg1MTAzZWJhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg', 'A rescue mission is assembled in Thailand where a group of young boys and their soccer coach are trapped in a system of underground caves that are flooding.');
+--insert into movie_genre(movie_id, genre_id) values (35, 0);
+--insert into movie_genre(movie_id, genre_id) values (35, 1);
+--insert into movie_genre(movie_id, genre_id) values (35, 3);
+--insert into movie_genre(movie_id, genre_id) values (35, 7);
+--insert into movie_genre(movie_id, genre_id) values (35, 24);
 
 insert into movies (id, title, release_date, poster, overview) values (36, 'Navalny', '5/1/2022', 'https://m.media-amazon.com/images/M/MV5BZDcxZjVlYTMtNDRmYi00M2YyLTg2NjItNmZmMmVjYzgxNmRmXkEyXkFqcGdeQXVyNzI5MDE3MQ@@._V1_.jpg', 'Follows the man who survived an assassination attempt by poisoning with a lethal nerve agent in August 2020. During his months-long recovery he makes shocking discoveries about the attempt on his life and decides to return home.');
 insert into movie_genre(movie_id, genre_id) values (36, 6);
@@ -273,10 +273,10 @@ insert into movie_genre(movie_id, genre_id) values (47, 8);
 insert into movie_genre(movie_id, genre_id) values (47, 9);
 insert into movie_genre(movie_id, genre_id) values (47, 15);
 
-insert into movies (id, title, release_date, poster, overview) values (53, 'Έγκλημα στον Νείλο', '2/10/2022', 'https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg', 'While on vacation on the Nile, Hercule Poirot must investigate the murder of a young heiress.');
-insert into movie_genre(movie_id, genre_id) values (53, 5);
-insert into movie_genre(movie_id, genre_id) values (53, 7);
-insert into movie_genre(movie_id, genre_id) values (53, 16);
+--insert into movies (id, title, release_date, poster, overview) values (53, 'Έγκλημα στον Νείλο', '2/10/2022', 'https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg', 'While on vacation on the Nile, Hercule Poirot must investigate the murder of a young heiress.');
+--insert into movie_genre(movie_id, genre_id) values (53, 5);
+--insert into movie_genre(movie_id, genre_id) values (53, 7);
+--insert into movie_genre(movie_id, genre_id) values (53, 16);
 
 insert into movies (id, title, release_date, poster, overview) values (56, 'Violent Night', '12/2/2022', 'https://m.media-amazon.com/images/M/MV5BYzg2NWNhOWItYjA3Yi00MzhhLTg4ZmItYzM3ZTIwN2U0ZGQ5XkEyXkFqcGdeQXVyMzEyMDQzNzY@._V1_.jpg', 'When a group of mercenaries attack the estate of a wealthy family, Santa Claus must step in to save the day (and Christmas).');
 insert into movie_genre(movie_id, genre_id) values (56, 0);

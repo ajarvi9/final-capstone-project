@@ -4,6 +4,7 @@ import axios from 'axios'
 
 
 
+
 Vue.use(Vuex)
 
 
@@ -17,6 +18,8 @@ const currentToken = localStorage.getItem('token')
 const currentUser = JSON.parse(localStorage.getItem('user'));
 const currentFavorites = JSON.parse(localStorage.getItem('favorites'));
 const currentWatchlist = JSON.parse(localStorage.getItem('watchlist'));
+
+
 
 if (currentToken != null) {
   axios.defaults.headers.common['Authorization'] = `Bearer ${currentToken}`;
